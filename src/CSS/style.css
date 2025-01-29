@@ -1,0 +1,282 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --main-color: #1190CB;
+    --dark-color:#141414;
+    --lightSkyBlue:#7dccff;
+    --skyblue:#75bedc;
+    
+}
+
+html{
+    font-size: 62.5%;
+    font-family: 'Montserrat';
+    scroll-behavior: smooth;
+}
+
+html ::-webkit-scrollbar {
+    width: 1rem;
+  }
+  html ::-webkit-scrollbar-thumb {
+    border-radius: 2rem;
+    background: var(--dark-color);
+  }
+  html ::-webkit-scrollbar-track {
+    background:var(--main-color) ;
+  }
+
+span{
+    font-size: 1.9rem;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    font-size: 1.9rem;
+}
+
+p{
+    font-size: 1.6rem;
+}
+
+h3{
+    font-size: 3rem;
+}
+
+.flex-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.background{
+    height: 100vh;
+    background-image: linear-gradient(to left top, #1190cb, #399fd8, #52aee5, #68bdf2, #7dccff);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.container{
+    margin: 0 2rem;
+}
+
+
+
+.menu-horizontal{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 1.7rem 3.5rem -0.6rem rgba(0,0,0,0.2);
+    padding: 1rem;
+    background-color: #fffafa;
+}
+
+
+.logo{
+    padding-left: 2rem;
+}
+
+.logo img{
+    width: 15rem;
+}
+
+.menu{
+    display: flex;
+}
+
+.menu li a{
+    margin: 5rem;
+    padding: 2rem;
+    color: var(--lightSkyBlue); 
+    transition: 0.3s ease-in;
+}
+
+.menu li a:hover{
+    color: var(--main-color);
+}
+
+
+
+
+.primeira-secao{
+    width: 300rem;
+    height: 40rem;
+    background-image: url(/src/Img/Background-1.avif);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 150rem 700rem; 
+    box-shadow: 0 0 3.9rem 1.4rem rgba(0,0,0,0.3);
+    margin-top: 4rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.primeira-secao h1{
+    margin-top: 6rem;
+    font-size: 3.5rem;
+    backdrop-filter: blur(1.5rem);
+    background-color: rgba(255, 255, 255 , 0.15);
+    box-shadow: 0 0 1rem 0.1rem rgba(0,0,0,0.35);
+    padding: 1rem;
+}
+
+
+.primeira-secao button{
+    margin-top: 5rem;
+    text-align: center;
+    font-size: 1.8rem;
+    background-color:#25D366;
+    border: none;
+    border-radius: 2rem; 
+    padding: 4rem;
+    cursor: pointer;
+    box-shadow: -2rem 1.1rem 5rem 1.2rem #c5c5c5;
+    transform: 0.2s cubic-bezier(0.235, 0, 0.05, 0.95);
+    }
+
+.primeira-secao button:hover{
+    transform: perspective(0.1rem) scale3d(1.044, 1.044, 1) translateZ(0);
+}
+
+.primeira-secao button:active{
+    color: var(--dark-color);
+}
+
+.segunda-secao{
+    height: 100vh;
+    margin-top: 10rem;
+    text-align: center;
+}
+
+.segunda-secao h2{
+    font-size: 4rem;
+    margin-bottom: 3rem;
+    font-weight: bold;
+}
+
+
+
+.grid-secao {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 1.25rem;
+}
+
+
+.grid {
+    padding: 1.25rem; 
+    text-align: center; 
+}
+
+
+.imagem-grid img {
+    width: 80%; 
+    height: auto; 
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.6);
+    border: 0.2rem solid #333;
+    filter: saturate(150%);
+    transform: 0.2s;
+}
+
+.imagem-grid img:hover{
+    transform: scale(1.1);
+}
+
+.texto-grid {
+    margin-top: 1.5rem; 
+    font-size: 2rem; 
+    color: var(--dark-color); 
+}
+
+.terceira-secao{
+    height: 100vh;
+    margin-top: 4rem;
+    text-align: center;
+}
+
+.terceira-secao h2{
+    font-size: 4rem;
+    margin-bottom: 9rem;
+    font-weight: bold;
+}
+.balao {
+    margin-right: 10em;
+    background: #000;
+    border-radius: 0 3rem 3rem 0;
+    width: 30rem;
+    height: auto;
+    color: #fff;
+    text-align: center;
+    background-color: #12729e8f;
+    padding: 2rem;
+}
+
+.balao2{
+    margin-left: 15rem;
+    border-radius: 0 30px 30px 0;
+    width: 30rem;
+    height: auto;
+    color: #fff;
+    text-align: center;
+    background-color: #12729e8f;
+    padding: 2rem;
+}
+
+.footer{
+    width: 100%;
+    background-color: #fffafa;
+}
+
+.logo-footer{
+   padding: 3rem;
+   font-size: 1.9rem;
+}
+
+.logo-footer img{
+    width: 15rem;
+}
+
+
+    
+    
+    
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
